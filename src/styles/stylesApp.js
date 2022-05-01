@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const ContainerApp = styled.div`
-    //background-color: #000;
-    //color: green;
-    //background-color: ${props => props.theme.colors.background};
-`
+    background-color: ${({ theme }) => theme.background};
+    background-size: 100vh;
+    background-image: url('assets/blur-mobile.png');
+    color: ${({ theme }) => theme.textColor};
+` 

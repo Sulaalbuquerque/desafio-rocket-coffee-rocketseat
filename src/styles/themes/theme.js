@@ -1,8 +1,5 @@
-/* 
-export default {
-    title: 'dark',
 
-    colors: {
+export const dark = {
 
         background: '#000',
         textColor: '#FFF',
@@ -10,7 +7,6 @@ export default {
         border: '#29292E',
         borderMenuMobile: '#A8A8B3',
         textColorMenuMobile: '#E1E1E6'
-    }
 }
-*/
+
 

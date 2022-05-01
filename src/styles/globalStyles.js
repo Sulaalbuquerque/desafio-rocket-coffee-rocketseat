@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
       font-family: Manrope, sans-serif;
+      height: 100vh;
   }
 ` 
  
