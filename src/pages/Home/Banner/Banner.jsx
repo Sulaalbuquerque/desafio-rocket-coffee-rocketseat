@@ -7,8 +7,6 @@ export const Banner = () => {
         <ContainerBanner>
           <img 
             src="assets\rocket-coffee.png" 
-            width= '400rem' 
-            height= '200rem'
           />
         </ContainerBanner>
       </>

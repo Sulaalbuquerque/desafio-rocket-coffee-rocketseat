@@ -9,4 +9,13 @@ export const ContainerTitleHeader = styled.div`
         text-align: center;
         margin: 6rem 2rem;
     }
+
+    @media (min-width: 770px) {
+        display: none;
+    }
+    @media (max-width: 770px) {}
+    @media (max-width: 990px) {}
+    @media (max-width: 1200px) {}
+    @media (max-width: 1400px) {}
+    @media (max-width: 1600px) {}
 ` 

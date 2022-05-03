@@ -22,4 +22,10 @@ export const ContainerTitles = styled.div`
         font-weight: 700;
         color: ${({ theme }) => theme.background};
     }
+
+    @media (min-width: 770px) {
+        span{
+            font-size: 4rem;
+        }
+    }
 ` 
