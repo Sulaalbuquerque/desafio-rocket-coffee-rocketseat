@@ -22,6 +22,13 @@ export const ContainerTitles = styled.div`
         color: ${({ theme }) => theme.background};
     }
 
+    @media (max-width: 430px) {
+        .primary,
+        .secondary{
+            font-size: 2rem;
+        }
+    }
+
     @media (min-width: 770px) {
         span{
             font-size: 4rem;
