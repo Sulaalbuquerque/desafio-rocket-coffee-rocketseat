@@ -1,27 +1,19 @@
 import { ContainerHeader } from "./styles"
 import { Nav } from "../Nav/Nav"
 import { MenuMobile } from "../../MenuMobile/MenuMobile"
-import { useState, useRef } from "react"
+import { useState, useEffect } from "react"
 
 export const Header = () => {
-  /*
+  
     const [menuIsVisible, setMenuIsVisible] = useState(false)
 
-    //const hamburguerOpen = useRef(null)
-    //const hamburguerClose = useRef(null)
-    //const menuMobile = useRef(null)
+    useEffect(() => {
+      document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
+    }, [menuIsVisible]);
 
-    if(menuIsVisible){
-      console.log('foi')
-      //console.log(hamburguerOpen.current)
-      //menuMobile.current.style.display = 'none'
-      //hamburguerOpen.current.style.display = 'block'
-      //hamburguerClose.current.style.display = 'none'
-    } 
-*/
     return (
       <>
-        <ContainerHeader>
+        <ContainerHeader  menuIsVisible={menuIsVisible} >
           
           <img 
             className="logo-mobile" 
@@ -38,18 +30,20 @@ export const Header = () => {
           <Nav/>       
 
           <button 
-            //ref={hamburguerOpen}
-            //onClick={() => setMenuIsVisible(true)}
-            className="hamburguer-open">
+            onClick={() => setMenuIsVisible(true)}
+            className="hamburguer-open"
+          >
             <img src="assets/menu-buguer-open.svg"/>
           </button>
 
-          <img 
-            //ref={hamburguerClose}
-            //onClick={() => setMenuIsVisible(false)}
+          <button
+            onClick={() => setMenuIsVisible(false)}
             className="hamburguer-close" 
-            src="assets\menu-buguer-close.svg"
-          />   
+          >
+            <img 
+              src="assets/menu-buguer-close.svg"
+            />  
+          </button> 
 
           <button className="buttonCoffee">
             Pegar meu café
@@ -58,9 +52,7 @@ export const Header = () => {
         </ContainerHeader>
 
         <MenuMobile
-          //ref={menuMobile}
-          //menuIsVisible={menuIsVisible}
-          //setMenuIsVisible={setMenuIsVisible}
+          menuIsVisible={menuIsVisible}
         />
       </>
     )

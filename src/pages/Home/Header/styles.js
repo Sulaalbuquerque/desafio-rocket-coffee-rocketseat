@@ -1,10 +1,9 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerHeader = styled.div`
-    //background-color: orange;
     padding: 1.5rem;
     border-bottom: solid 1px ${({ theme }) => theme.border};
-
     display: flex;
     justify-content: space-between;
 
@@ -19,7 +18,10 @@ export const ContainerHeader = styled.div`
     }
 
     .hamburguer-close{
-       display: none;
+        display: none;
+        border: none;
+        background: none;
+        cursor: pointer;
     }
 
     .buttonCoffee{
@@ -57,12 +59,20 @@ export const ContainerHeader = styled.div`
             display: none;
         };
     }
-    @media (max-width: 770px) {}
-    @media (max-width: 990px) {}
+    
     @media (min-width: 1000px) {
         padding: 1.5rem 6rem;
     }
-    @media (max-width: 1400px) {}
-    @media (max-width: 1600px) {}
+
+    ${({ menuIsVisible }) => menuIsVisible && css`
+    
+        .hamburguer-open{
+            display: none;
+        }
+
+        .hamburguer-close{
+            display: block;
+        }
+    `}
 `
 

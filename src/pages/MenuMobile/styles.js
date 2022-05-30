@@ -1,11 +1,9 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ContainerMenuMobile = styled.div`
-    //background-color: green;
-   height: 100vh;
-   //display: none;
-
-   
+    height: 100vh;
+    display: none;
 
    ul{
         display: flex;
@@ -36,7 +34,7 @@ export const ContainerMenuMobile = styled.div`
         }
     }
 
-    @media (min-width: 770px) {
-        
-    }
+    ${({ menuIsVisible }) => menuIsVisible && css`
+        display: block;
+    `}
 ` 

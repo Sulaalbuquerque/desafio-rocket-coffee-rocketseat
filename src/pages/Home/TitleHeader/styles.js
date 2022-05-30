@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContainerTitleHeader = styled.div`
-    //background-color: red;
 
     p{
         font-size: 2rem;
@@ -13,9 +12,4 @@ export const ContainerTitleHeader = styled.div`
     @media (min-width: 770px) {
         display: none;
     }
-    @media (max-width: 770px) {}
-    @media (max-width: 990px) {}
-    @media (max-width: 1200px) {}
-    @media (max-width: 1400px) {}
-    @media (max-width: 1600px) {}
 ` 

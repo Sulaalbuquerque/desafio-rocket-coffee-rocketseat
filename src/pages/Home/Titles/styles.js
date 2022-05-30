@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ContainerTitles = styled.div`
-    //background-color: green;
     margin: 6rem 2rem 2rem;
 
     span{

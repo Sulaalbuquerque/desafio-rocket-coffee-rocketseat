@@ -1,10 +1,9 @@
 import { ContainerMenuMobile } from "./styles"
 
-export const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
-
+export const MenuMobile = ({ menuIsVisible }) => {
     return (
       <>
-        <ContainerMenuMobile /*isVisible={menuIsVisible} */ >
+        <ContainerMenuMobile  menuIsVisible={menuIsVisible} >
             <ul>
               <li>
                 <a href={'#'}>Home</a>

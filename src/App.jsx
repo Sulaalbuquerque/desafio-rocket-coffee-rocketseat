@@ -19,15 +19,12 @@ function App() {
         <GlobalStyle/>
         <ContainerApp>
           <Header/>
-          
-          {/*
           <ContainerMainApp>
             <TitleHeader/>
             <Button/>
             <Titles/>
             <Banner/>
           </ContainerMainApp>
-          */}
         </ContainerApp>
       </ThemeProvider>
     </>
