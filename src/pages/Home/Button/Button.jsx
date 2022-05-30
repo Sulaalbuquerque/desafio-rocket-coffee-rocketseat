@@ -1,4 +1,5 @@
 import { ContainerButton } from "./styles"
+import iconArrow from '../../../../assets/arrow.svg'
 
 export const Button = () => {
 
@@ -7,7 +8,7 @@ export const Button = () => {
         <ContainerButton>
           <button>
             PEGAR MEU CAFÉ
-            <img src="assets\arrow.svg"/>
+            <img src={iconArrow}/>
           </button>
         </ContainerButton>
       </>

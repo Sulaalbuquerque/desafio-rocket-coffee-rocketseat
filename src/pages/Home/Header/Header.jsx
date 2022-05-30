@@ -3,6 +3,11 @@ import { Nav } from "../Nav/Nav"
 import { MenuMobile } from "../../MenuMobile/MenuMobile"
 import { useState, useEffect } from "react"
 
+import imgLogoMobile from '../../../../assets/logo-mobile.svg'
+import imgLogoDesktop from '../../../../assets/logo-desktop.svg'
+import iconMenuHamburguerOpen from '../../../../assets/menu-buguer-open.svg'
+import iconMenuHamburguerClose from '../../../../assets/menu-buguer-close.svg'
+
 export const Header = () => {
   
     const [menuIsVisible, setMenuIsVisible] = useState(false)
@@ -17,13 +22,13 @@ export const Header = () => {
           
           <img 
             className="logo-mobile" 
-            src="assets\logo-mobile.svg" 
+            src={imgLogoMobile}
             alt="Logo da rocketseat"
           />
           
           <img 
             className="logo-desktop" 
-            src="assets\logo-desktop.svg" 
+            src={imgLogoDesktop}
             alt="Logo da rocketseat"
           />
           
@@ -33,7 +38,7 @@ export const Header = () => {
             onClick={() => setMenuIsVisible(true)}
             className="hamburguer-open"
           >
-            <img src="assets/menu-buguer-open.svg"/>
+            <img src={iconMenuHamburguerOpen}/>
           </button>
 
           <button
@@ -41,7 +46,7 @@ export const Header = () => {
             className="hamburguer-close" 
           >
             <img 
-              src="assets/menu-buguer-close.svg"
+              src={iconMenuHamburguerClose}
             />  
           </button> 
 

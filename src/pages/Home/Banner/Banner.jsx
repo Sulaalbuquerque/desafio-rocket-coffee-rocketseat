@@ -1,4 +1,5 @@
 import { ContainerBanner } from "./styles"
+import imgCoffee from '../../../../assets/rocket-coffee.png'
 
 export const Banner = () => {
 
@@ -6,7 +7,7 @@ export const Banner = () => {
       <>
         <ContainerBanner>
           <img 
-            src="assets\rocket-coffee.png" 
+            src={imgCoffee}
           />
         </ContainerBanner>
       </>
